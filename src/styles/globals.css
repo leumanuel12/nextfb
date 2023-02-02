@@ -30,6 +30,6 @@
         @apply col-span-1 p-2 flex mx-auto justify-center md:w-11/12;
     }
     .stories-card-base {
-        @apply min-w-[112px] border rounded-lg relative mr-2 ;
+        @apply min-w-[112px] h-48 border rounded-lg relative mr-2;
     }
 }

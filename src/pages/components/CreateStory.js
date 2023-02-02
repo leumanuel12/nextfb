@@ -1,10 +1,19 @@
 import { PlusIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 export default function CreateStory() {
   return (
-    <div className="stories-card-base">
-      {/* Profile pic in stories */}
-      <p className="h-32 w-full bg-gray-300 rounded-t-lg" />
+    <div className="stories-card-base overflow-hidden">
+      {/* Profile pic in stories  */}
+      <p className="h-32 flex bg-black rounded-t-xl">
+        <Image
+          className="bg-black rounded-t-lg object-contain"
+          src={`/nextfb_logo_v2.png`}
+          alt="create story"
+          width="112"
+          height="128"
+        />
+      </p>
 
       {/* Plus icon */}
       <p className="rounded-full bg-white p-1  absolute top-28 left-9">
@@ -13,7 +22,7 @@ export default function CreateStory() {
         </span>
       </p>
 
-      <p className="h-16 w-full bg-white rounded-b-lg px-2">
+      <p className="h-16 w-full bg-white-500 rounded-b-lg px-2 z-10">
         <span className="absolute bottom-2 pl-4 text-xs font-medium">
           Create story
         </span>
