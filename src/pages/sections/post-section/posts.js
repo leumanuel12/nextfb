@@ -22,9 +22,9 @@ export default function Posts({ posts }) {
                 <div className="col-span-1 w-11 mr-2">
                   <button>
                     <Image
-                      className="w-10 h-10 rounded-full object-contain border-2 border-white"
-                      src={`/nextfb_logo_v2.png`}
-                      alt="create story"
+                      className="w-10 h-10 rounded-full object-cover border-2 border-white"
+                      src={post.image ? post.image : `/nextfb_logo_v2.png`} //TODO: update this once database is setup
+                      alt={post.image ? post.image : `/nextfb_logo_v2.png`} //TODO: update this once database is setup
                       width="40"
                       height="40"
                     />
