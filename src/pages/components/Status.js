@@ -17,9 +17,11 @@ export default function Status() {
           height="32"
         />
 
-        <span className="sm:h-9 w-10/12 rounded-2xl hover:bg-gray-200 bg-gray-100 px-4 py-1 overflow-hidden">
-          <button>What&apos;s on your mind, Person?</button>
-        </span>
+        <button className="sm:h-10 w-10/12 rounded-full hover:bg-gray-200 bg-gray-100 px-4 py-1 overflow-hidden relative">
+          <span className="absolute left-3 top-2 text-gray-500">
+            What&apos;s on your mind, Person?
+          </span>
+        </button>
       </div>
 
       <div className="border-b border-gray-300 pb-3 w-11/12 mx-auto" />
