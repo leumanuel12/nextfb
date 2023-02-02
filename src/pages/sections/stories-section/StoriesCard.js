@@ -18,7 +18,7 @@ export default function StoriesCard({ id, name, imgurl }) {
       {/* mini profile icon */}
       <p className="w-10 h-10 rounded-full bg-blue-500 p-1  absolute top-2 left-2">
         <Image
-          className="bg-black w-[32px] h-[32px] rounded-full object-contain"
+          className="bg-black w-[32px] h-[32px] rounded-full object-cover"
           src={imgurl}
           alt={imgurl}
           width="32"

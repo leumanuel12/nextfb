@@ -27,7 +27,7 @@
         @apply border border-gray-200 bg-white flex lg:grid grid-cols-3;
     }
     .stories-buttons,.reels-buttons {
-        @apply col-span-1 p-2 flex mx-auto justify-center sm:w-11/12;
+        @apply col-span-1 p-2 flex mx-auto justify-center w-11/12;
     }
     .stories-card-base,.reels-card-base {
         @apply min-w-[112px] h-48 border shadow-md rounded-lg relative mr-2;
