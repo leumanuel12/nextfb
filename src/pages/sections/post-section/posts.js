@@ -22,7 +22,7 @@ export default function Posts({ posts }) {
                 <div className="col-span-1 w-11 mr-2">
                   <button>
                     <Image
-                      className="w-10 h-10 rounded-full object-cover border-2 border-white"
+                      className="w-8 h-8 md:w-10 md:h-10 rounded-full object-cover border-2 border-white"
                       src={post.image ? post.image : `/nextfb_logo_v2.png`} //TODO: update this once database is setup
                       alt={post.image ? post.image : `/nextfb_logo_v2.png`} //TODO: update this once database is setup
                       width="40"
@@ -46,10 +46,10 @@ export default function Posts({ posts }) {
 
                 {/* Post settings (START) */}
                 <div className="col-span-1 flex justify-end px-2 md:absolute md:top-2 md:right-0">
-                  <button className="hover:bg-gray-200 rounded-full p-1">
+                  <button className="md:hover:bg-gray-200 rounded-full p-1">
                     <EllipsisHorizontalIcon className="h-6 w-6 stroke-2" />
                   </button>
-                  <button className="hover:bg-gray-200 rounded-full p-1">
+                  <button className="md:hover:bg-gray-200 rounded-full p-1">
                     <XMarkIcon className="h-6 w-6 stroke-2" />
                   </button>
                 </div>
