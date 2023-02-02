@@ -3,12 +3,20 @@ import {
   FaceSmileIcon,
   PhotoIcon,
 } from "@heroicons/react/24/solid";
+import Image from "next/image";
 
 export default function Status() {
   return (
     <div className="post-container">
       <div className="post-container-content">
-        <span className="w-10 h-10 bg-gray-200 mr-4 rounded-full" />
+        <Image
+          className="w-10 h-10 rounded-full mr-4 object-contain"
+          src={`/nextfb_logo_v2.png`}
+          alt="create story"
+          width="32"
+          height="32"
+        />
+
         <span className="sm:h-9 w-10/12 rounded-2xl hover:bg-gray-200 bg-gray-100 px-4 py-1 overflow-hidden">
           <button>What&apos;s on your mind, Person?</button>
         </span>

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import NewsFeed from "./components/Posts";
 import Status from "./components/Status";
-import StoriesPanel from "./components/StoriesPanel";
+import StoriesPanel from "./components/storiespanel/StoriesPanel";
 
 export default function Newsfeed() {
   return (

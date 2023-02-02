@@ -22,14 +22,14 @@
         @apply col-span-1 p-2 w-full justify-center mx-auto flex hover:bg-gray-100 rounded-lg;
     }
 
-    /* Stories Component */
-    .stories-container{
+    /* Stories and Reels Component TODO: Reels component*/
+    .stories-container,.reels-container{
         @apply border border-gray-200 flex lg:grid grid-cols-3;
     }
-    .stories-buttons {
+    .stories-buttons,.reels-buttons {
         @apply col-span-1 p-2 flex mx-auto justify-center md:w-11/12;
     }
-    .stories-card-base {
-        @apply min-w-[112px] h-48 border rounded-lg relative mr-2;
+    .stories-card-base,.reels-card-base {
+        @apply min-w-[112px] h-48 border shadow-lg rounded-lg relative mr-2;
     }
 }

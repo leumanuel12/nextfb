@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function CreateStory() {
   return (
-    <div className="stories-card-base overflow-hidden">
+    <button className="stories-card-base overflow-hidden">
       {/* Profile pic in stories  */}
       <p className="h-32 flex bg-black rounded-t-xl">
         <Image
@@ -12,6 +12,7 @@ export default function CreateStory() {
           alt="create story"
           width="112"
           height="128"
+          priority="1" //TODO: update this ID once dynamic
         />
       </p>
 
@@ -22,11 +23,11 @@ export default function CreateStory() {
         </span>
       </p>
 
-      <p className="h-16 w-full bg-white-500 rounded-b-lg px-2 z-10">
-        <span className="absolute bottom-2 pl-4 text-xs font-medium">
+      <p className="h-16 w-full bg-white-500 rounded-b-lg">
+        <span className="absolute bottom-2 left-6 text-xs font-medium">
           Create story
         </span>
       </p>
-    </div>
+    </button>
   );
 }
