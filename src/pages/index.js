@@ -13,7 +13,7 @@ export async function getServerSideProps() {
       name: "User Name 1",
       sharewith: "public",
       date: 1675323251238,
-      image: "",
+      image: "/witcher3_2.png",
       details:
         "test test test test test test test test test test test test test test",
     },
@@ -33,7 +33,7 @@ export async function getServerSideProps() {
       name: "User Name 2",
       sharewith: "public",
       date: 1675324053100,
-      image: "",
+      image: "/witcher3_1.png",
       details:
         "test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3",
     },
@@ -53,9 +53,19 @@ export async function getServerSideProps() {
       name: "User Name 4",
       sharewith: "public",
       date: 1675312953210,
-      image: "",
+      image: "/witcher3.png",
       details:
         "test5 test5 test5 test5 test5 test5 test5 test5 test5 test5 test5 test5 test5 test5",
+    },
+    {
+      postid: "6",
+      userid: "104",
+      name: "User Name 5",
+      sharewith: "public",
+      date: 1675312953210,
+      image: "",
+      details:
+        "test6 test6 test6 test6 test6 test6 test6 test6 test6 test6 test6 test6 test6 test6",
     },
   ];
 

@@ -9,7 +9,7 @@ export default function StoriesCard({ id, name, imgurl }) {
       <Image
         className="bg-black rounded-lg object-contain w-[112px] h-[192px]"
         src={imgurl}
-        alt="create story"
+        alt={imgurl}
         width="112"
         height="192"
         priority={id}
@@ -20,7 +20,7 @@ export default function StoriesCard({ id, name, imgurl }) {
         <Image
           className="bg-black w-[32px] h-[32px] rounded-full object-contain"
           src={imgurl}
-          alt="create story"
+          alt={imgurl}
           width="32"
           height="32"
           priority={id}

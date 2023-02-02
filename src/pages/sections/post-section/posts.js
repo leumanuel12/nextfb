@@ -55,7 +55,22 @@ export default function Posts({ posts }) {
                 </div>
                 {/* Post settings (END) */}
               </div>
+
               <div className="p-1">{post.details}</div>
+
+              {post.image ? (
+                <button>
+                  <Image
+                    className="object-contain p-1"
+                    src={post.image}
+                    alt={post.image}
+                    width="620"
+                    height="400"
+                    priority={post.postid}
+                    quality="40"
+                  />
+                </button>
+              ) : null}
 
               {/* Comments / Reactions / Share Section */}
               <div className="border-t border-gray-200 grid-cols-2 pt-1 flex justify-center">
