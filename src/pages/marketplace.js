@@ -4,7 +4,7 @@ export default function MarketPlace() {
   return (
     <div>
       <Head>
-        <title>Market Place</title>
+        <title>{process.env.NEXT_PUBLIC_APPNAME} - Market Place</title>
         <meta name="description" content="Nextjs application v2" />
       </Head>
 

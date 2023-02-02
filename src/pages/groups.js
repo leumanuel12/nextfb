@@ -4,7 +4,7 @@ export default function Groups() {
   return (
     <div>
       <Head>
-        <title>Groups</title>
+        <title>{process.env.NEXT_PUBLIC_APPNAME} - Groups</title>
         <meta name="description" content="Nextjs application v2" />
       </Head>
 

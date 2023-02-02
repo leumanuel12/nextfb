@@ -4,7 +4,7 @@ export default function Gaming() {
   return (
     <div>
       <Head>
-        <title>Gaming</title>
+        <title>{process.env.NEXT_PUBLIC_APPNAME} - Gaming</title>
         <meta name="description" content="Nextjs application v2" />
       </Head>
 

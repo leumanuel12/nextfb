@@ -4,7 +4,7 @@ export default function Watch() {
   return (
     <div>
       <Head>
-        <title>Watch</title>
+        <title>{process.env.NEXT_PUBLIC_APPNAME} - Watch</title>
         <meta name="description" content="Nextjs application v2" />
       </Head>
 

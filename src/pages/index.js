@@ -72,7 +72,7 @@ export default function Newsfeed({ posts }) {
   return (
     <>
       <Head>
-        <title>Home</title>
+        <title>{process.env.NEXT_PUBLIC_APPNAME} - Home</title>
         <meta name="description" content="Nextjs application v2" />
       </Head>
 

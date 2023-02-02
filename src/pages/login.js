@@ -4,7 +4,7 @@ export default function Login() {
   return (
     <div>
       <Head>
-        <title>Login</title>
+        <title>{process.env.NEXT_PUBLIC_APPNAME} - Login</title>
         <meta name="description" content="Nextjs application v2" />
       </Head>
     </div>
