@@ -11,6 +11,7 @@ export async function getServerSideProps() {
       postid: "1",
       userid: "100",
       name: "User Name 1",
+      sharewith: "public",
       date: 1675323251238,
       image: "",
       details:
@@ -20,6 +21,7 @@ export async function getServerSideProps() {
       postid: "2",
       userid: "100",
       name: "User Name 1",
+      sharewith: "public",
       date: 1675323522050,
       image: "",
       details:
@@ -29,6 +31,7 @@ export async function getServerSideProps() {
       postid: "3",
       userid: "101",
       name: "User Name 2",
+      sharewith: "public",
       date: 1675324053100,
       image: "",
       details:
@@ -38,6 +41,7 @@ export async function getServerSideProps() {
       postid: "4",
       userid: "102",
       name: "User Name 3",
+      sharewith: "public",
       date: 1675312953210,
       image: "",
       details:
@@ -47,6 +51,7 @@ export async function getServerSideProps() {
       postid: "5",
       userid: "103",
       name: "User Name 4",
+      sharewith: "public",
       date: 1675312953210,
       image: "",
       details:
