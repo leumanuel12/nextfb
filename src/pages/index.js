@@ -8,36 +8,49 @@ export async function getServerSideProps() {
 
   const contents = [
     {
-      id: "1",
-      name: "Post Name 1",
+      postid: "1",
+      userid: "100",
+      name: "User Name 1",
       date: 1675323251238,
       image: "",
       details:
         "test test test test test test test test test test test test test test",
     },
     {
-      id: "2",
-      name: "Post Name 2",
+      postid: "2",
+      userid: "100",
+      name: "User Name 1",
       date: 1675323522050,
       image: "",
       details:
         "test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2",
     },
     {
-      id: "3",
-      name: "Post Name 3",
+      postid: "3",
+      userid: "101",
+      name: "User Name 2",
       date: 1675324053100,
       image: "",
       details:
         "test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3",
     },
     {
-      id: "4",
-      name: "Post Name 4",
-      date: 1675323953210,
+      postid: "4",
+      userid: "102",
+      name: "User Name 3",
+      date: 1675312953210,
       image: "",
       details:
         "test4 test4 test4 test4 test4 test4 test4 test4 test4 test4 test4 test4 test4 test4",
+    },
+    {
+      postid: "5",
+      userid: "103",
+      name: "User Name 4",
+      date: 1675312953210,
+      image: "",
+      details:
+        "test5 test5 test5 test5 test5 test5 test5 test5 test5 test5 test5 test5 test5 test5",
     },
   ];
 

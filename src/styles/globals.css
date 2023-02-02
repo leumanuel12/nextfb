@@ -32,4 +32,9 @@
     .stories-card-base,.reels-card-base {
         @apply min-w-[112px] h-48 border shadow-md rounded-lg relative mr-2;
     }
+
+    /* Post Reactions  */
+    .post-reaction {
+        @apply flex w-full justify-center p-2 rounded-md hover:bg-gray-100 font-medium text-sm;
+    }
 }
