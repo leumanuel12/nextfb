@@ -15,7 +15,7 @@ export default function StoriesPanel() {
   const activeButtonText = " text-blue-600 ";
 
   return (
-    <div className="shadow-lg my-4">
+    <div className="shadow-md my-4 rounded-lg">
       <div className="stories-container rounded-t-lg pt-1">
         <button
           onClick={() => setActivePanel("stories")}

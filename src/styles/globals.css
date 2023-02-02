@@ -5,7 +5,7 @@
 
 @layer components{
     body {
-        @apply text-gray-600;
+        @apply text-gray-600 bg-gray-100;
     }
     .main-content {
         @apply max-w-7xl mx-auto pt-5 flex justify-center;
@@ -13,7 +13,7 @@
 
     /* Share Status Component */
     .post-container {
-        @apply w-full py-3 px-2 border border-gray-200 rounded-lg shadow-lg;
+        @apply w-full py-3 px-2 border border-gray-200 bg-white rounded-lg shadow-md;
     }
     .post-container-content {
         @apply flex mx-auto w-full justify-center;
@@ -24,12 +24,12 @@
 
     /* Stories and Reels Component TODO: Reels component*/
     .stories-container,.reels-container{
-        @apply border border-gray-200 flex lg:grid grid-cols-3;
+        @apply border border-gray-200 bg-white flex lg:grid grid-cols-3;
     }
     .stories-buttons,.reels-buttons {
-        @apply col-span-1 p-2 flex mx-auto justify-center md:w-11/12;
+        @apply col-span-1 p-2 flex mx-auto justify-center sm:w-11/12;
     }
     .stories-card-base,.reels-card-base {
-        @apply min-w-[112px] h-48 border shadow-lg rounded-lg relative mr-2;
+        @apply min-w-[112px] h-48 border shadow-md rounded-lg relative mr-2;
     }
 }

@@ -12,6 +12,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { useState } from "react";
 import NextFBlogo from "../components/svg/nextfb_logo_v2.svg";
+import Image from "next/image";
 
 const navlinks = [
   {
@@ -87,12 +88,20 @@ export default function Header({ children }) {
           </div>
 
           <div className="col-span-1 hidden lg:flex my-auto justify-end text-gray-700">
-            <Link href="/login">Login</Link>
+            <button>
+              <Image
+                className="w-9 h-9 rounded-full mr-4 object-contain"
+                src={`/nextfb_logo_v2.png`}
+                alt="create story"
+                width="36"
+                height="36"
+              />
+            </button>
           </div>
         </div>
 
         {/* for mobile */}
-        <div className="mx-auto pb-2">
+        <div className="lg:hidden mx-auto pb-2">
           {/* MOBILE - HAMBURGER (START) */}
           <div className="lg:hidden my-auto flex w-full">
             <NextFBlogo className="md:hidden justify-start mt-2 text-4xl my-auto mr-2" />
