@@ -86,7 +86,7 @@ export default function Newsfeed({ posts }) {
         <meta name="description" content="Nextjs application v2" />
       </Head>
 
-      <div className="w-10/12 md:w-6/12">
+      <div className="w-screen sm:w-10/12 md:w-6/12">
         <StoriesPanel />
         <Status />
         <Posts posts={posts} />
