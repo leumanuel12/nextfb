@@ -65,7 +65,7 @@ export default function Header({ children }) {
             <input
               type="text"
               placeholder="Search on NextFB"
-              className="bg-gray-200 rounded-r-full px-2"
+              className="bg-gray-200 rounded-r-full px-2 focus-within:outline-none"
             />
           </div>
 

@@ -4,10 +4,22 @@ import {
   PhotoIcon,
 } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import StatusModal from "./StatusModal";
+import { useState } from "react";
 
 export default function Status() {
+  const [openStatusModal, setOpenStatusModal] = useState(false);
+
+  function statusModalHandle() {
+    setOpenStatusModal(!openStatusModal);
+  }
+
   return (
     <div className="post-container">
+      <StatusModal
+        openStatusModal={openStatusModal}
+        setOpenStatusModal={setOpenStatusModal}
+      />
       <div className="post-container-content">
         <Image
           className="w-10 h-10 rounded-full mr-4 object-contain"
@@ -17,7 +29,10 @@ export default function Status() {
           height="32"
         />
 
-        <button className="sm:h-10 w-10/12 rounded-full hover:bg-gray-200 bg-gray-100 px-4 py-1 overflow-hidden relative">
+        <button
+          className="sm:h-10 w-10/12 rounded-full hover:bg-gray-200 bg-gray-100 px-4 py-1 overflow-hidden relative"
+          onClick={() => statusModalHandle()}
+        >
           <span className="absolute left-3 top-2 text-gray-500">
             What&apos;s on your mind, Person?
           </span>
