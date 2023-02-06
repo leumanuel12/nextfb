@@ -12,8 +12,7 @@ const Picker = dynamic(
 );
 
 export default function StatusModal({ openStatusModal, setOpenStatusModal }) {
-  if(!openStatusModal) return;
-const open = openStatusModal;
+  const open = openStatusModal;
   const setOpen = setOpenStatusModal;
 
   const [statusMessage, setStatusMessage] = useState("");
