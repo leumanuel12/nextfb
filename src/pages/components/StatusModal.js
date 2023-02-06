@@ -19,10 +19,11 @@ export default function StatusModal({ openStatusModal, setOpenStatusModal }) {
 
   const [statusMessage, setStatusMessage] = useState("");
   const [showEmoji, setShowEmoji] = useState(false);
+  const [disablePost, setDisablePost] = useState(true);
 
   const setStatusMsgStyle = (msg) => {
     let style = "";
-    msg > 85 ? (style = "text-md") : (style = "text-2xl");
+    msg > 80 ? (style = "text-md") : (style = "text-2xl");
     return style;
   };
 
@@ -117,7 +118,14 @@ export default function StatusModal({ openStatusModal, setOpenStatusModal }) {
                       }
                       placeholder="What's on your mind, Person?"
                       value={statusMessage}
-                      onChange={(e) => setStatusMessage(e.target.value)}
+                      onChange={(e) => {
+                        setStatusMessage(e.target.value);
+                        if (e.target.value.length > 0) {
+                          setDisablePost(false);
+                        } else {
+                          setDisablePost(true);
+                        }
+                      }}
                       onClick={() => {
                         if (showEmoji) setShowEmoji(!showEmoji);
                       }}
@@ -148,7 +156,16 @@ export default function StatusModal({ openStatusModal, setOpenStatusModal }) {
                   )}
                   {/* -------------- EMOJI SECTION (END) -------------- */}
 
-                  <button className="bg-blue-600 text-white font-bold w-11/12 rounded-md ml-5 mb-3 py-1">
+                  <button
+                    className={
+                      "font-bold w-11/12 rounded-md ml-5 mb-3 py-1 disabled " +
+                      (disablePost
+                        ? "bg-gray-300 text-gray-400"
+                        : "bg-blue-600 text-white")
+                    }
+                    disabled={disablePost}
+                    aria-disabled={disablePost}
+                  >
                     Post
                   </button>
                 </Dialog.Panel>
