@@ -132,7 +132,7 @@ export default function StatusModal({ openStatusModal, setOpenStatusModal }) {
                       onEmojiClick={onEmojiClick}
                       emojiVersion="7.0.2"
                       skinTonesDisabled="true"
-                      autoFocusSearch="false"
+                      autoFocusSearch={false}
                     />
                   </div>
                 )}
