@@ -8,6 +8,7 @@ export async function getServerSideProps() {
   try {
     const response = await clientPromise;
     const db = response.db("posts");
+
     const result = await db.collection("posts").find({}).toArray();
 
     //console.log(result);
