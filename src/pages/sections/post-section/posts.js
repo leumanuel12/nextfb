@@ -16,7 +16,10 @@ export default function Posts({ posts }) {
       {posts
         .map((post) => {
           return (
-            <div key={post.postid} className="post-container mt-4 relative">
+            <div
+              key={post._id.toString()}
+              className="post-container mt-4 relative"
+            >
               <div className="flex grid-cols-3 pb-2">
                 {/* Mini profile icon (START) */}
                 <div className="col-span-1 w-11 mr-2">
@@ -38,7 +41,7 @@ export default function Posts({ posts }) {
                     <Link href="#">{post.name}</Link>
                   </div>
                   <div className="flex text-xs">
-                    <ReactTimeAgo date={post.date} locale="en-US" />
+                    <ReactTimeAgo date={parseInt(post.date)} locale="en-US" />
                     <GlobeAmericasIcon className="pl-1 h-5 w-5" />
                   </div>
                 </div>
@@ -66,7 +69,7 @@ export default function Posts({ posts }) {
                     alt={post.image}
                     width="620"
                     height="400"
-                    priority={post.postid}
+                    priority={post._id.toString()}
                     quality="40"
                   />
                 </button>
