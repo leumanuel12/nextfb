@@ -1,10 +1,14 @@
 import Head from "next/head";
 import Link from "next/link";
-import { useContext } from "react";
-import { GlobalContext } from "./context/globalcontext";
+import { useEffect } from "react";
+import { useGlobalContext } from "./context/globalcontext";
 
 export default function Login() {
-  const { loggedIn, setLoggedIn } = useContext(GlobalContext);
+  const { loggedIn, setLoggedIn } = useGlobalContext();
+
+  //useEffect(() => {
+  //  console.log(loggedIn);
+  //}, []);
 
   return (
     <div>

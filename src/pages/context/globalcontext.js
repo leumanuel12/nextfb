@@ -13,4 +13,6 @@ export default function GlobalContextProvider({ children }) {
   );
 }
 
-//export const useGlobalContext = useContext(GlobalContext);
+export function useGlobalContext() {
+  return useContext(GlobalContext);
+}

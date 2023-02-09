@@ -1,18 +1,22 @@
 import "@/styles/globals.css";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import Header from "./components/Header";
-import GlobalContextProvider, { GlobalContext } from "./context/globalcontext";
+import GlobalContextProvider, {
+  useGlobalContext,
+} from "./context/globalcontext";
 
 export default function App({ Component, pageProps }) {
   const getLayout = Component.getLayout;
 
-  const { loggedIn, setLoggedIn } = useContext(GlobalContext);
+  const { loggedIn, setLoggedIn } = useGlobalContext();
 
   if (Component.getLayout) {
-    return getLayout(<Component {...pageProps} />);
+    return getLayout(
+      <GlobalContextProvider>
+        <Component {...pageProps} />
+      </GlobalContextProvider>
+    );
   }
-
-  console.log(loggedIn);
 
   return (
     <GlobalContextProvider>
