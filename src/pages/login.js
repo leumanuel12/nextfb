@@ -1,6 +1,11 @@
 import Head from "next/head";
+import Link from "next/link";
+import { useContext } from "react";
+import { GlobalContext } from "./context/globalcontext";
 
 export default function Login() {
+  const { loggedIn, setLoggedIn } = useContext(GlobalContext);
+
   return (
     <div>
       <Head>
@@ -15,9 +20,13 @@ export default function Login() {
             <div className="block mt-4 text-3xl text-black">
               Connect with friends and the world around you on NextFB.
             </div>
-            <button className="block mt-4 border border-gray-400 p-2 rounded-md hover:bg-blue-600 hover:text-white">
+            <Link
+              href="/"
+              className="block mt-4 border w-72 border-gray-400 p-2 rounded-md hover:bg-blue-600 hover:text-white"
+              onClick={() => setLoggedIn(true)}
+            >
               Continue without logging in for now.
-            </button>
+            </Link>
           </div>
         </div>
         <div className="col-span-1 md:min-h-screen md:-mt-20 flex justify-center items-center mt-10 md:mr-10">
@@ -32,10 +41,7 @@ export default function Login() {
               placeholder="Password"
               className="block mt-3 p-3 w-72 sm:w-96 border border-gray-300 rounded-md"
             />
-            <button
-              className="bg-blue-600 hover:bg-blue-700 text-white text-xl font-bold mt-3 p-3 w-72 sm:w-96 rounded-md"
-              onClick={() => setLogin(true)}
-            >
+            <button className="bg-blue-600 hover:bg-blue-700 text-white text-xl font-bold mt-3 p-3 w-72 sm:w-96 rounded-md">
               Log In
             </button>
             <div className="text-blue-600 flex justify-center py-4 border-b border-gray-300 hover:underline">
